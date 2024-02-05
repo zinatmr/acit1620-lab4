@@ -1,0 +1,97 @@
+:root {
+    --base-color: 210, 60%;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+}
+.content >h1 {
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    color: hsl(var(--base-color),90%);
+    background-color: hsl(var(--base-color),20%);
+    top:0;
+    margin:0;
+}
+.content >nav{
+    margin-top: 10px;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    margin: 0;
+    margin-bottom: 30px;
+    
+}
+.content > nav>a{
+    display:block;
+    border:2px;
+    border-radius: 5px;
+    color: hsl(var(--base-color),50%);
+    background-color: hsl(var(--base-color),98%);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .4);
+    margin-top: 20px;
+    margin-right:10px;
+    padding-top:10px;
+    padding-bottom:2px;
+    padding-right: 2px;
+    padding-left: 2px;
+    margin-left: 5px;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    transition: height 0.2s, width 0.2s, box-shadow 0.2s, margin-top 0.5s, margin-left 0.2s, margin-right 0.2s;
+
+}
+
+.content > nav > a:hover {
+    color: hsl(var(--base-color),90%) ;
+    background-color: hsl(var(--base-color),10%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .4);
+    height: 35px;
+    width: 78px;
+    margin-top: 15px;
+    margin-right: 5px;
+    margin-left: 1px;
+    transition: height 0.2s, width 0.2s, box-shadow 0.2s, margin-top 0.5s, margin-left 0.2s, margin-right 0.2s;
+}
+.content>section {
+    h2 {
+        color: hsl(var(--base-color),50%);
+    }
+    p {
+        color: hsl(var(--base-color),40%);
+    }
+    padding-left: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin:0;
+    transition: color 1s, background-color 1s;
+}
+
+.content>section:hover{
+    h2,p {
+
+        color: hsl(var(--base-color),90%);
+    }
+    background-color: hsl(var(--base-color),10%);
+    transition: color 1s, background-color 1s;
+    padding-left: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+}
+.content footer{
+    border-top: solid 1px hsl(var(--base-color),10%);
+    text-align: center;
+    bottom: 0;
+    margin-top: 60px;
+    position: relative;
+    p{
+        color: hsl(var(--base-color),40%);
+    }
+}
